@@ -55,11 +55,11 @@
 
 //#define USE_SERIAL  SerialUSB //Serial for boards whith USB serial port
 #define USE_SERIAL  Serial
-#define outputPin  16 
-#define zerocross  4 // for boards with CHANGEBLE input pins
+#define outputPin  12 
+#define zerocross  5 // for boards with CHANGEBLE input pins
 
-dimmerLamp dimmer(outputPin, zerocross); //initialase port for dimmer for ESP8266, ESP32, Arduino due boards
-//dimmerLamp dimmer(outputPin); //initialase port for dimmer for MEGA, Leonardo, UNO, Arduino M0, Arduino Zero
+//dimmerLamp dimmer(outputPin, zerocross); //initialase port for dimmer for ESP8266, ESP32, Arduino due boards
+dimmerLamp dimmer(outputPin); //initialase port for dimmer for MEGA, Leonardo, UNO, Arduino M0, Arduino Zero
 
 int outVal = 0;
 
